@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic HTML Websitte</title>
+
+    <meta name="description" content="basic html website">
+    <meta name="keywords" content="html, website, basic, page, semantic">
+    <meta name="robots" content="index, follow">
+</head>
+
+<body class="grid grid-template-areas font-1">
+    <header class="header-sect grid grid-template-rows gap-1 padding-1">
+        <section class="text-center md:flex items-center gap-1" style="">
+            <img src="icon.png" alt="logo" class="">
+            <p class="font-bold font-125">Jane Doe</p>
+            <nav class="" style="margin-left: auto;">
+                <ul class="flex gap-1 list-none justify-center">
+                    <li class=""><a href="index.html" >Home</a></li>
+                    <li class=""><a href="projects.html" >Projects</a></li>
+                    <li class=""><a href="articles.html" >Articles</a></li>
+                    <li class=""><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="text-center ">
+            <h1 class="font-bold font-125">Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </section>
+    </header>
+    <aside class="project-sect" >
+        <section class="grid" style="grid-template-rows: repeat(6, auto);">
+            <h2 class="font-bold font-125 padding-1">Project</h2>
+            <article class="bg-grey padding-05-1"><a href="#" class="">HTML Only Portofolio</a></article>
+            <article class="bg-grey padding-05-1"><a href="#">Calculator</a></article>
+            <article class="bg-grey padding-05-1"><a href="#">Quiz App</a></article>
+            <article class="bg-grey padding-05-1"><a href="#">Countdown Timer</a></article>
+            <article class="bg-grey padding-05-1"><a href="#">Product Upcoming Page</a></article>
+        </section>
+    </aside>
+    <main class="experience-sect grid" style="grid-template-rows: repeat(3, min-content);">
+        <h2 class="font-bold font-125 padding-1">Work Experience</h2>
+        <article class="padding-05-1 bg-grey">
+            <p class="">roadmap.sh</p>
+            <p>Solved all the frontend projects</p>
+            <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: blue;">Visit my profile</a>
+        </article>
+        <article class="padding-05-1 bg-grey">
+            <h2 class="">OpenSource Work</h2>
+            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: blue;">Visit my GitHub profile</a>
+        </article>
+    </main>
+    <aside class="education-sect padding-1 grid gap-05" style="grid-template-rows: repeat(4, min-content);">
+        <h2 class="font-bold font-125">Education</h2>
+        <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+        <p>Courses I took:</p>
+        <ul class="" style="list-style-position: inside;">
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discreet Mathematics</li>
+        </ul>
+    </aside>
+    <footer class="footer-sect padding-1">
+        <section class="" style="padding-bottom: 1em;">
+            <h2 class="font-bold font-125" style="padding-bottom: 1em;">Reviews From My Teachers</h2>
+            <div class="grid gap-1" style="grid-template-columns: repeat(auto-fit, 300px); justify-content: center;">
+                <blockquote class="padding-1" style="border: solid 1px black; border-radius: 1em;">John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+                <blockquote class="padding-1 display-none" style="border: solid 1px black; border-radius: 1em;">John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+                <blockquote class="padding-1 display-none" style="border: solid 1px black; border-radius: 1em;">John doe was a brilliant student; always stood out with his assignments.
+                </blockquote>
+            </div>
+        </section>
+        <section>
+            <p class="font-bold text-center padding-1">&copy; all rights reserved 2025</p>
+        </section>
+    </footer>
+</body>
+ 
+</html>

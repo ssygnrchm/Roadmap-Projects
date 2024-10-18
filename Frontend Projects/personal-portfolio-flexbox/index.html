@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Basic HTML Websitte</title>
+
+    <meta name="description" content="basic html website">
+    <meta name="keywords" content="html, website, basic, page, semantic">
+    <meta name="robots" content="index, follow">
+</head>
+<body class="md:text-lg">
+    <header class="flex flex-col py-4 md:min-h-60">
+        <section class="flex flex-col items-center mb-2 md:flex-row md:justify-between">
+            <div class="md:flex md:items-center">
+                <img src="icon.png" alt="logo" class="md:max-h-9 md:mx-4">
+                <p class="text-lg font-bold">Jane Doe</p>
+            </div>
+            <nav class="md:mx-2">
+                <ul class="flex justify-center">
+                    <li><a href="index.html" class="hover:bg-zinc-600 hover:text-white hover:rounded-xl px-3 py-2">Home</a></li>
+                    <li><a href="projects.html" class="hover:bg-zinc-600 hover:text-white hover:rounded-xl px-3 py-2">Projects</a></li>
+                    <li><a href="articles.html" class="hover:bg-zinc-600 hover:text-white hover:rounded-xl px-3 py-2">Articles</a></li>
+                    <li><a href="contact.html" class="hover:bg-zinc-600 hover:text-white hover:rounded-xl px-3 py-2">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="flex flex-col items-center my-auto">
+            <h1 class="font-bold text-lg md:text-3xl">Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </section>
+    </header>
+    <div class="md:flex md:border-solid md:border-y md:border-black">
+        <aside class="md:min-w-[20%]">
+            <section class="flex flex-col">
+                <h2 class="font-bold border-solid border-b border-black w-full text-center py-1">Project</h2>
+                <article class="border-solid border-b border-black w-full text-center"><a href="#" class="">HTML Only Portofolio</a></article>
+                <article class="border-solid border-b border-black w-full text-center"><a href="#">Calculator</a></article>
+                <article class="border-solid border-b border-black w-full text-center"><a href="#">Quiz App</a></article>
+                <article class="border-solid border-b border-black w-full text-center"><a href="#">Countdown Timer</a></article>
+                <article class="border-solid border-b border-black w-full text-center"><a href="#">Product Upcoming Page</a></article>
+            </section>
+        </aside>
+        <main class="flex flex-col md:min-w-[50%] md:border-solid md:border-x md:border-black">
+            <div class="border-solid border-b border-black w-full px-4 text-center py-1">
+                <h2 class="font-bold">Work Experience</h2>
+            </div>
+            <article class="border-solid border-b border-black w-full px-4 py-3">
+                <p class="font-bold">roadmap.sh</p>
+                <p>Solved all the frontend projects</p>
+                <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-violet-600 hover:font-bold">Visit my profile</a>
+            </article>
+            <article class="border-solid border-b border-black w-full px-4 py-3">
+                <h2 class="font-bold">OpenSource Work</h2>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-violet-600 hover:font-bold">Visit my GitHub profile</a>
+            </article>
+        </main>
+        <aside class="border-solid border-b border-black px-4 py-3 md:min-w-[30%] md:border-0">
+            <h2 class="font-bold text-center pb-3">Education</h2>
+            <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+            <p>Courses I took:</p>
+            <ul class="list-disc list-inside">
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discreet Mathematics</li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="flex flex-col items-center px-4 py-3">
+        <section>
+            <h2 class="font-bold text-center">Reviews From My Teachers</h2>
+            <div class="md:flex md:gap-4">
+                <blockquote class="border-solid border border-black rounded-3xl max-w-96 p-6 my-3">John doe was a brilliant student; always stood out with his assignments.</blockquote>
+                <blockquote class="border-solid border border-black rounded-3xl max-w-96 p-6 my-3 hidden md:flex">John doe was a brilliant student; always stood out with his assignments.</blockquote>
+                <blockquote class="border-solid border border-black rounded-3xl max-w-96 p-6 my-3 hidden md:flex">John doe was a brilliant student; always stood out with his assignments.</blockquote>
+            </div>
+        </section>
+        <section>
+            <p>&copy; all rights reserved 2025</p>
+        </section>
+    </footer>
+</body>
+</html>
