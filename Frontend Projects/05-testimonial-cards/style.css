@@ -57,32 +57,60 @@ select {
   font: inherit;
 }
 
+/* Main layout */
 .testimonial-grid {
   display: grid;
-  grid-template-columns: auto;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
   margin-inline: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Card layout */
 .testimonial-card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  border-radius: 16px;
-  margin: 1rem;
+  font-size: 1rem;
+  gap: 1em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+/* Setting up card grid area */
+.testimonial-card:nth-child(1) {
+  grid-area: one;
+}
+
+.testimonial-card:nth-child(2) {
+  grid-area: two;
+}
+
+.testimonial-card:nth-child(3) {
+  grid-area: three;
+}
+
+.testimonial-card:nth-child(4) {
+  grid-area: four;
 }
 
 .testimonial-text {
-  display: block;
-  border-radius: 1rem;
+  display: grid;
+  gap: 0.5em;
+  border-radius: 1em;
   position: relative;
-  padding: 1.5rem 1rem;
-  font-size: 1rem;
+  padding: 1.5em 1em;
+  font-size: 1em;
   font-weight: 500;
   margin: 0;
   line-height: 1.6em;
 }
 
+/* Small triangle in the bottom of 1st Card */
 .arrow {
   top: 100%;
   width: 0;
@@ -90,15 +118,17 @@ select {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid black;
-  margin-left: 1.5rem;
+  margin-left: 1.5em;
   position: absolute;
 }
 
+/* Card dark color template */
 .dark-color {
   background-color: black;
   color: white;
 }
 
+/* Card light color template */
 .light-color {
   background-color: white;
   color: black;
@@ -107,19 +137,66 @@ select {
   border-radius: 1rem;
 }
 
+/* Profile inside card */
 .testimonial-profile {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0 1rem 1rem 1rem;
-  font-size: 1rem;
+  gap: 1em;
+  padding: 0 1em 1em 1em;
+  font-size: 1em;
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .testimonial-profile img {
   width: 5rem;
   border-radius: 9999px;
+}
+
+/* Button in the last card */
+.borderless-button {
+  border: 0;
+  background-color: transparent ;
+  font-weight: bolder;
+}
+
+.img-caraousel {
+  width: 64px;
+  border-radius: 999px;
+}
+
+.img-shadow{
+  width: 56px;
+  height: 56px;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonial-grid {
+    max-width: 900px;
+    grid-template-areas: 
+      "one two"
+      "three three"
+      "four four";
+  }
+
+  .testimonial-card {
+    font-size: 1.15rem;
+  }
+
+  .testimonial-card:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .testimonial-text {
+    font-weight: 400;
+  }
+
+  .testimonial-card-img {
+    width: 254px;
+    height: 254px;
+  }
 }

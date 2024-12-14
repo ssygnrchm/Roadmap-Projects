@@ -7,54 +7,65 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Using grid layout -->
   <main class="testimonial-grid">
+
+    <!-- Using flex layout inside card -->
     <article class="testimonial-card">
       <div class="testimonial-text dark-color">
         <p>I have been solving all the project ideas on roadmap.sh and i am surprised how far i have come from where i started.</p><br>
         <p>Highly recommended!</p>
+        <!-- Small triangle in the bottom of card -->
         <div class="arrow"></div>
       </div>
+
       <div class="testimonial-profile">
-        <img src="asset/icon.png" alt="icon">
+        <img src="asset/man.jpg" alt="icon">
         <div class="profile-text">
-          <p class="name">Name</p>
-          <p>Position</p>
+          <p class="name">Artem Jones</p>
+          <p>Junior Frontend Developer</p>
         </div>
       </div>
     </article>
-    <article class="testimonial-card light-color">
+
+    <!-- margin-bottom: auto is used to ensure that the height of the card does not fill the entire container -->
+    <article class="testimonial-card light-color" style="margin-bottom: auto;">
       <div class="testimonial-text">
-        <p>I have been solving all the project ideas on roadmap.sh and i am surprised how far i have come from where i started.</p><br>
-        <p>Highly recommended!</p>
+        <p>Since starting my career in 2021, I have only followed one resource, roadmap.sh, it truly helped me go from 0 to having a job and changing the financial trajectory of my family.</p>
       </div>
       <div class="testimonial-profile">
-        <img src="asset/icon.png" alt="icon">
+        <img src="asset/man.jpg" alt="icon">
         <div class="profile-text">
-          <p class="name">Name</p>
-          <p>Position</p>
+          <p class="name">Artem Jones</p>
+          <p>Junior Frontend Developer</p>
         </div>
       </div>
     </article>
+
     <article class="testimonial-card">
-      <img src="asset/icon.png" alt="icon" style="border-radius: 1rem;">
+      <img src="asset/woman.jpg" alt="icon" style="border-radius: 1em;" class="testimonial-card-img">
       <div class="testimonial-text dark-color">
-        <img src="" alt="5 stars">
-        <p class="Name">Name</p>
-        <p>Position</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis sequi praesentium! Aliquid soluta, natus rerum reprehenderit et eaque labore tempora molestiae earum iure, dolorem saepe sed in quasi veniam.</p>
+        <p><img src="asset/cab5da4f-f7d7-429e-bd00-447bfcbf64cd.png" alt="5 stars" style="height: 24px;"></p>
+        <p class="Name" style="font-weight: 600; font-size: 1.5em;">Jackie Macckle</p>
+        <p style="opacity: 0.8;">Engineering Manager</p>
+        <p>I find myself recommending roadmap.sh to all the interness or junior developers. it's a great way to skill up and grow in your career.</p>
       </div>
     </article>
+
     <article class="testimonial-card light-color">
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus est excepturi eaque quo eos necessitatibus iste maiores fugiat praesentium, aspernatur eius sunt voluptatem rerum neque, quasi, ullam accusantium debitis cum.</div>
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div style="display: flex;">
-          <button><</button>
-          <img src="asset/icon.png" alt="icon">
-          <button>></button>
+      <div class="testimonial-text" style="text-align: center;">roadmap.sh is an incredible resource. I was fortunate to discover it durring my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5em; padding-bottom: 1.5em;">
+        <div style="display: flex; gap: 0.5em; align-items: center;">
+          <button class="borderless-button"><</button>
+          <img src="asset/man.jpg" alt="icon" class="img-caraousel img-shadow">
+          <img src="asset/man.jpg" alt="icon" class="img-caraousel">
+          <img src="asset/man.jpg" alt="icon" class="img-caraousel img-shadow">
+          <button class="borderless-button">></button>
         </div>
-        <p>Name</p>
+        <p>Artem Jones</p>
       </div>
     </article>
+    
   </main>
 </body>
 </html>
