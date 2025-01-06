@@ -13,3 +13,5 @@ https://roadmap.sh/
 05 - Testimonial Cards : https://roadmap.sh/projects/testimonial-cards
 
 06 - Datepicker UI : https://roadmap.sh/projects/datepicker-ui
+
+07 - Image Grid Layout : https://roadmap.sh/projects/image-grid
